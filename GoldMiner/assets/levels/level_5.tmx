@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="goal" value="650"/>
+ </properties>
+ <tileset firstgid="1" name="ObjBomb" tilewidth="76" tileheight="96">
+  <image source="gfx/ObjBomb.png" width="76" height="96"/>
+ </tileset>
+ <tileset firstgid="2" name="ObjGlod1" tilewidth="28" tileheight="25">
+  <image source="gfx/ObjGlod1.png" width="28" height="25"/>
+ </tileset>
+ <tileset firstgid="3" name="ObjGlod2" tilewidth="50" tileheight="45">
+  <image source="gfx/ObjGlod2.png" width="50" height="45"/>
+ </tileset>
+ <tileset firstgid="4" name="ObjGlod3_1" tilewidth="88" tileheight="80">
+  <image source="gfx/ObjGlod3_1.png" width="88" height="80"/>
+ </tileset>
+ <tileset firstgid="5" name="ObjDiamonds" tilewidth="32" tileheight="27">
+  <image source="gfx/ObjDiamonds.png" width="32" height="27"/>
+ </tileset>
+ <tileset firstgid="6" name="ObjRand" tilewidth="56" tileheight="66">
+  <image source="gfx/ObjRand.png" width="56" height="66"/>
+ </tileset>
+ <tileset firstgid="7" name="ObjStone1" tilewidth="81" tileheight="71">
+  <image source="gfx/ObjStone1.png" width="81" height="71"/>
+ </tileset>
+ <tileset firstgid="8" name="ObjStone2" tilewidth="56" tileheight="47">
+  <image source="gfx/ObjStone2.png" width="56" height="47"/>
+ </tileset>
+ <tileset firstgid="9" name="level-background-0" tilewidth="960" tileheight="540">
+  <image source="gfx/level-background-0.jpg" width="960" height="540"/>
+ </tileset>
+ <tileset firstgid="10" name="mouse1" tilewidth="51" tileheight="38">
+  <image source="gfx/mouse1.png" width="51" height="38"/>
+ </tileset>
+ <objectgroup name="bg" visible="0">
+  <object gid="9" x="0" y="639" width="960" height="540"/>
+  <object type="stone2" gid="7" x="227.5" y="319.5" width="81" height="71"/>
+  <object type="stone2" gid="7" x="180.5" y="274.5" width="81" height="71"/>
+ </objectgroup>
+ <objectgroup name="objects">
+  <object type="stone2" gid="7" x="717" y="366" width="81" height="71"/>
+  <object type="gold3" gid="4" x="40" y="562" width="88" height="80"/>
+  <object type="gold2" gid="3" x="828" y="299.5" width="50" height="45"/>
+  <object type="stone2" gid="7" x="261.5" y="456.5" width="81" height="71"/>
+  <object type="gold1" gid="2" x="609" y="383.5" width="28" height="25"/>
+  <object type="gold1" gid="2" x="115" y="202.5" width="28" height="25"/>
+  <object type="stone2" gid="7" x="120.5" y="306.5" width="81" height="71"/>
+  <object type="stone1" gid="8" x="528" y="391.5" width="56" height="47"/>
+  <object type="gold3" gid="4" x="414" y="563" width="88" height="80"/>
+  <object type="bag" gid="6" x="696" y="532" width="56" height="66"/>
+  <object type="gold1" gid="2" x="215" y="214.5" width="28" height="25"/>
+  <object type="gold1" gid="2" x="308" y="519.5" width="28" height="25"/>
+  <object type="mouse" gid="10" x="144" y="349" width="51" height="38">
+   <properties>
+    <property name="from" value="7"/>
+    <property name="needflip" value="false"/>
+    <property name="to" value="18"/>
+   </properties>
+  </object>
+  <object type="mouse" gid="10" x="1.5" y="424" width="51" height="38">
+   <properties>
+    <property name="from" value="1"/>
+    <property name="needflip" value="false"/>
+    <property name="to" value="9"/>
+   </properties>
+  </object>
+  <object type="mouse" gid="10" x="760.5" y="462" width="51" height="38">
+   <properties>
+    <property name="from" value="24"/>
+    <property name="needflip" value="true"/>
+    <property name="to" value="15"/>
+   </properties>
+  </object>
+  <object type="gold3" gid="4" x="554" y="568" width="88" height="80"/>
+  <object type="gold3" gid="4" x="855" y="474" width="88" height="80"/>
+ </objectgroup>
+</map>

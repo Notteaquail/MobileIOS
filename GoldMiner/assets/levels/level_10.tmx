@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="goal" value="650"/>
+ </properties>
+ <tileset firstgid="1" name="ObjBomb" tilewidth="76" tileheight="96">
+  <image source="gfx/ObjBomb.png" width="76" height="96"/>
+ </tileset>
+ <tileset firstgid="2" name="ObjGlod1" tilewidth="28" tileheight="25">
+  <image source="gfx/ObjGlod1.png" width="28" height="25"/>
+ </tileset>
+ <tileset firstgid="3" name="ObjGlod2" tilewidth="50" tileheight="45">
+  <image source="gfx/ObjGlod2.png" width="50" height="45"/>
+ </tileset>
+ <tileset firstgid="4" name="ObjGlod3_1" tilewidth="88" tileheight="80">
+  <image source="gfx/ObjGlod3_1.png" width="88" height="80"/>
+ </tileset>
+ <tileset firstgid="5" name="ObjDiamonds" tilewidth="32" tileheight="27">
+  <image source="gfx/ObjDiamonds.png" width="32" height="27"/>
+ </tileset>
+ <tileset firstgid="6" name="ObjRand" tilewidth="56" tileheight="66">
+  <image source="gfx/ObjRand.png" width="56" height="66"/>
+ </tileset>
+ <tileset firstgid="7" name="ObjStone1" tilewidth="81" tileheight="71">
+  <image source="gfx/ObjStone1.png" width="81" height="71"/>
+ </tileset>
+ <tileset firstgid="8" name="ObjStone2" tilewidth="56" tileheight="47">
+  <image source="gfx/ObjStone2.png" width="56" height="47"/>
+ </tileset>
+ <tileset firstgid="9" name="level-background-0" tilewidth="960" tileheight="540">
+  <image source="gfx/level-background-0.jpg" width="960" height="540"/>
+ </tileset>
+ <tileset firstgid="10" name="mouse1" tilewidth="51" tileheight="38">
+  <image source="gfx/mouse1.png" width="51" height="38"/>
+ </tileset>
+ <tileset firstgid="11" name="OjbBone1" tilewidth="49" tileheight="47">
+  <image source="gfx/OjbBone1.png" width="49" height="47"/>
+ </tileset>
+ <tileset firstgid="12" name="OjbBone2" tilewidth="51" tileheight="35">
+  <image source="gfx/OjbBone2.png" width="51" height="35"/>
+ </tileset>
+ <objectgroup name="bg" visible="0">
+  <object gid="9" x="0" y="641" width="960" height="540"/>
+ </objectgroup>
+ <objectgroup name="objects">
+  <object type="gold1" gid="2" x="48" y="210.5" width="28" height="25"/>
+  <object type="gold1" gid="2" x="180" y="244.5" width="28" height="25"/>
+  <object type="gold1" gid="2" x="635" y="266.5" width="28" height="25"/>
+  <object type="gold1" gid="2" x="569" y="278.5" width="28" height="25"/>
+  <object type="gold1" gid="2" x="239" y="327.5" width="28" height="25"/>
+  <object type="gold2" gid="3" x="63" y="375.5" width="50" height="45"/>
+  <object type="gold2" gid="3" x="157" y="380.5" width="50" height="45"/>
+  <object type="gold2" gid="3" x="464" y="417.5" width="50" height="45"/>
+  <object type="gold2" gid="3" x="366" y="421.5" width="50" height="45"/>
+  <object type="gold2" gid="3" x="752" y="501.5" width="50" height="45"/>
+  <object type="gold2" gid="3" x="791" y="354.5" width="50" height="45"/>
+  <object type="gold2" gid="3" x="699" y="183.5" width="50" height="45"/>
+  <object type="gold3" gid="4" x="87" y="539" width="88" height="80"/>
+  <object type="gold3" gid="4" x="302" y="575" width="88" height="80"/>
+  <object type="gold3" gid="4" x="473" y="579" width="88" height="80"/>
+  <object type="gold3" gid="4" x="867" y="376" width="88" height="80"/>
+  <object type="gold3" gid="4" x="684" y="392" width="88" height="80"/>
+  <object type="gold3" gid="4" x="549" y="416" width="88" height="80"/>
+  <object type="stone2" gid="7" x="133.5" y="184.5" width="81" height="71"/>
+  <object type="stone2" gid="7" x="233.5" y="431.5" width="81" height="71"/>
+  <object type="stone2" gid="7" x="573.5" y="525.5" width="81" height="71"/>
+  <object type="stone2" gid="7" x="426.5" y="321.5" width="81" height="71"/>
+  <object type="stone2" gid="7" x="586.5" y="183.5" width="81" height="71"/>
+  <object type="gold3" gid="4" x="783" y="249" width="88" height="80"/>
+  <object type="gold3" gid="4" x="832" y="512" width="88" height="80"/>
+  <object gid="4" x="288" y="288"/>
+ </objectgroup>
+</map>

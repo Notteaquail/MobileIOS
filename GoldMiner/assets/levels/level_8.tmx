@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" nextobjectid="111">
+ <properties>
+  <property name="goal" type="int" value="650"/>
+ </properties>
+ <tileset firstgid="1" name="ObjBomb" tilewidth="76" tileheight="96" tilecount="1" columns="1">
+  <image source="gfx/ObjBomb.png" width="76" height="96"/>
+ </tileset>
+ <tileset firstgid="2" name="ObjGlod1" tilewidth="28" tileheight="25" tilecount="1" columns="1">
+  <image source="gfx/ObjGlod1.png" width="28" height="25"/>
+ </tileset>
+ <tileset firstgid="3" name="ObjGlod2" tilewidth="50" tileheight="45" tilecount="1" columns="1">
+  <image source="gfx/ObjGlod2.png" width="50" height="45"/>
+ </tileset>
+ <tileset firstgid="4" name="ObjGlod3_1" tilewidth="88" tileheight="80" tilecount="1" columns="1">
+  <image source="gfx/ObjGlod3_1.png" width="88" height="80"/>
+ </tileset>
+ <tileset firstgid="5" name="ObjDiamonds" tilewidth="32" tileheight="27" tilecount="1" columns="1">
+  <image source="gfx/ObjDiamonds.png" width="32" height="27"/>
+ </tileset>
+ <tileset firstgid="6" name="ObjRand" tilewidth="56" tileheight="66" tilecount="1" columns="1">
+  <image source="gfx/ObjRand.png" width="56" height="66"/>
+ </tileset>
+ <tileset firstgid="7" name="ObjStone1" tilewidth="81" tileheight="71" tilecount="1" columns="1">
+  <image source="gfx/ObjStone1.png" width="81" height="71"/>
+ </tileset>
+ <tileset firstgid="8" name="ObjStone2" tilewidth="56" tileheight="47" tilecount="1" columns="1">
+  <image source="gfx/ObjStone2.png" width="56" height="47"/>
+ </tileset>
+ <tileset firstgid="9" name="level-background-0" tilewidth="960" tileheight="540" tilecount="1" columns="1">
+  <image source="gfx/level-background-0.jpg" width="960" height="540"/>
+ </tileset>
+ <tileset firstgid="10" name="mouse1" tilewidth="51" tileheight="38" tilecount="1" columns="1">
+  <image source="gfx/mouse1.png" width="51" height="38"/>
+ </tileset>
+ <tileset firstgid="11" name="OjbBone1" tilewidth="49" tileheight="47" tilecount="1" columns="1">
+  <image source="gfx/OjbBone1.png" width="49" height="47"/>
+ </tileset>
+ <tileset firstgid="12" name="OjbBone2" tilewidth="51" tileheight="35" tilecount="1" columns="1">
+  <image source="gfx/OjbBone2.png" width="51" height="35"/>
+ </tileset>
+ <objectgroup name="bg" visible="0">
+  <object id="14" gid="9" x="0" y="641" width="960" height="540"/>
+ </objectgroup>
+ <objectgroup name="objects">
+  <object id="71" type="gold3" gid="4" x="54" y="544" width="88" height="80"/>
+  <object id="79" type="gold3" gid="4" x="322" y="569" width="88" height="80"/>
+  <object id="80" type="gold3" gid="4" x="739" y="498" width="88" height="80"/>
+  <object id="85" type="bomb" gid="1" x="58" y="294" width="76" height="96"/>
+  <object id="87" gid="1" x="799" y="320" width="76" height="96"/>
+  <object id="89" type="stone1" gid="8" x="109" y="158.5" width="56" height="47"/>
+  <object id="90" type="stone1" gid="8" x="42" y="387.5" width="56" height="47"/>
+  <object id="91" type="stone2" gid="7" x="159.5" y="376.5" width="81" height="71"/>
+  <object id="92" type="stone2" gid="7" x="201.5" y="248.5" width="81" height="71"/>
+  <object id="93" type="stone2" gid="7" x="407.5" y="405.5" width="81" height="71"/>
+  <object id="95" type="diamond" gid="5" x="190" y="515.5" width="32" height="27"/>
+  <object id="96" type="diamond" gid="5" x="248" y="507.5" width="32" height="27"/>
+  <object id="97" type="stone1" gid="8" x="312" y="342.5" width="56" height="47"/>
+  <object id="98" type="stone2" gid="7" x="276.5" y="447.5" width="81" height="71"/>
+  <object id="99" type="diamond" gid="5" x="326" y="274.5" width="32" height="27"/>
+  <object id="100" type="stone1" gid="8" x="511" y="342.5" width="56" height="47"/>
+  <object id="101" type="stone1" gid="8" x="534" y="261.5" width="56" height="47"/>
+  <object id="102" type="stone2" gid="7" x="682.5" y="279.5" width="81" height="71"/>
+  <object id="103" type="stone2" gid="7" x="823.5" y="186.5" width="81" height="71"/>
+  <object id="104" type="stone2" gid="7" x="633.5" y="536.5" width="81" height="71"/>
+  <object id="105" type="gold3" gid="4" x="511" y="555" width="88" height="80"/>
+  <object id="107" type="stone2" gid="7" x="857.5" y="407.5" width="81" height="71"/>
+  <object id="108" type="stone1" gid="8" x="725" y="345.5" width="56" height="47"/>
+  <object id="109" type="stone2" gid="7" x="662.5" y="428.5" width="81" height="71"/>
+  <object id="110" type="diamond" gid="5" x="885" y="481.5" width="32" height="27"/>
+ </objectgroup>
+</map>
