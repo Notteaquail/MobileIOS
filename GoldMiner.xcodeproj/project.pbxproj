@@ -7,28 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1813AD3E239FD2E3002E02EF /* TreasureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813AD3D239FD2E3002E02EF /* TreasureNode.swift */; };
+		1813AD42239FDBF6002E02EF /* Textures.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1813AD41239FDBF6002E02EF /* Textures.atlas */; };
 		1821EDE0238FEC3E00255E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821EDDF238FEC3E00255E3A /* AppDelegate.swift */; };
-		1821EDE2238FEC3E00255E3A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDE1238FEC3E00255E3A /* GameScene.sks */; };
-		1821EDE4238FEC3E00255E3A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDE3238FEC3E00255E3A /* Actions.sks */; };
-		1821EDE6238FEC3E00255E3A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821EDE5238FEC3E00255E3A /* GameScene.swift */; };
-		1821EDE8238FEC3E00255E3A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821EDE7238FEC3E00255E3A /* GameViewController.swift */; };
 		1821EDEB238FEC3E00255E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDE9238FEC3E00255E3A /* Main.storyboard */; };
 		1821EDED238FEC4A00255E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDEC238FEC4A00255E3A /* Assets.xcassets */; };
 		1821EDF0238FEC4A00255E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDEE238FEC4A00255E3A /* LaunchScreen.storyboard */; };
 		1821EDFA23900B8900255E3A /* mineScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDF923900B8900255E3A /* mineScene.sks */; };
 		1845C4FB23923F56000373ED /* mineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845C4FA23923F56000373ED /* mineViewController.swift */; };
 		1845C4FD23924184000373ED /* mineScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845C4FC23924184000373ED /* mineScene.swift */; };
-		18B659102393F1DB00611595 /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6590F2393F1DB00611595 /* Treasure.swift */; };
-		18B659142393FF7D00611595 /* Textures.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 18B659132393FF7D00611595 /* Textures.atlas */; };
+		18B659102393F1DB00611595 /* Treasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6590F2393F1DB00611595 /* Treasures.swift */; };
+		18F1F01A2394B6E70074C39F /* Launch_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1F0192394B6E70074C39F /* Launch_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1813AD3D239FD2E3002E02EF /* TreasureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureNode.swift; sourceTree = "<group>"; };
+		1813AD41239FDBF6002E02EF /* Textures.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Textures.atlas; sourceTree = "<group>"; };
 		1821EDDC238FEC3E00255E3A /* GoldMiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldMiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1821EDDF238FEC3E00255E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1821EDE1238FEC3E00255E3A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		1821EDE3238FEC3E00255E3A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		1821EDE5238FEC3E00255E3A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		1821EDE7238FEC3E00255E3A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		1821EDEA238FEC3E00255E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1821EDEC238FEC4A00255E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1821EDEF238FEC4A00255E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,8 +32,8 @@
 		1821EDF923900B8900255E3A /* mineScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = mineScene.sks; sourceTree = "<group>"; };
 		1845C4FA23923F56000373ED /* mineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mineViewController.swift; sourceTree = "<group>"; };
 		1845C4FC23924184000373ED /* mineScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mineScene.swift; sourceTree = "<group>"; };
-		18B6590F2393F1DB00611595 /* Treasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
-		18B659132393FF7D00611595 /* Textures.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Textures.atlas; sourceTree = "<group>"; };
+		18B6590F2393F1DB00611595 /* Treasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasures.swift; sourceTree = "<group>"; };
+		18F1F0192394B6E70074C39F /* Launch_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,19 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				1821EDDF238FEC3E00255E3A /* AppDelegate.swift */,
-				1821EDE1238FEC3E00255E3A /* GameScene.sks */,
-				1821EDE5238FEC3E00255E3A /* GameScene.swift */,
-				1821EDE7238FEC3E00255E3A /* GameViewController.swift */,
-				1821EDE3238FEC3E00255E3A /* Actions.sks */,
-				1845C4FC23924184000373ED /* mineScene.swift */,
 				1845C4FA23923F56000373ED /* mineViewController.swift */,
+				1845C4FC23924184000373ED /* mineScene.swift */,
+				18B6590F2393F1DB00611595 /* Treasures.swift */,
+				1813AD3D239FD2E3002E02EF /* TreasureNode.swift */,
 				1821EDF923900B8900255E3A /* mineScene.sks */,
 				1821EDE9238FEC3E00255E3A /* Main.storyboard */,
 				1821EDEC238FEC4A00255E3A /* Assets.xcassets */,
-				18B659132393FF7D00611595 /* Textures.atlas */,
+				1813AD41239FDBF6002E02EF /* Textures.atlas */,
 				1821EDEE238FEC4A00255E3A /* LaunchScreen.storyboard */,
+				18F1F0192394B6E70074C39F /* Launch_logo.png */,
 				1821EDF1238FEC4A00255E3A /* Info.plist */,
-				18B6590F2393F1DB00611595 /* Treasure.swift */,
 			);
 			path = GoldMiner;
 			sourceTree = "<group>";
@@ -147,11 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1821EDEB238FEC3E00255E3A /* Main.storyboard in Resources */,
-				1821EDE2238FEC3E00255E3A /* GameScene.sks in Resources */,
+				1813AD42239FDBF6002E02EF /* Textures.atlas in Resources */,
 				1821EDED238FEC4A00255E3A /* Assets.xcassets in Resources */,
-				18B659142393FF7D00611595 /* Textures.atlas in Resources */,
+				18F1F01A2394B6E70074C39F /* Launch_logo.png in Resources */,
 				1821EDF0238FEC4A00255E3A /* LaunchScreen.storyboard in Resources */,
-				1821EDE4238FEC3E00255E3A /* Actions.sks in Resources */,
 				1821EDFA23900B8900255E3A /* mineScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,9 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1821EDE6238FEC3E00255E3A /* GameScene.swift in Sources */,
-				1821EDE8238FEC3E00255E3A /* GameViewController.swift in Sources */,
-				18B659102393F1DB00611595 /* Treasure.swift in Sources */,
+				1813AD3E239FD2E3002E02EF /* TreasureNode.swift in Sources */,
+				18B659102393F1DB00611595 /* Treasures.swift in Sources */,
 				1845C4FD23924184000373ED /* mineScene.swift in Sources */,
 				1821EDE0238FEC3E00255E3A /* AppDelegate.swift in Sources */,
 				1845C4FB23923F56000373ED /* mineViewController.swift in Sources */,

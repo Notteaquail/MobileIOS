@@ -10,6 +10,9 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+
+
+//SCENE SIZE = 320*568
 class mineScene: SKScene , SKPhysicsContactDelegate{
     
     //MARK: Properties
@@ -20,9 +23,9 @@ class mineScene: SKScene , SKPhysicsContactDelegate{
     private var sPos: CGPoint?
     private var line: SKSpriteNode?
     private var miner: SKSpriteNode?
-    private var gold3: SKSpriteNode?
+    //private var gold3: SKSpriteNode?
     private var coinCountNode: SKLabelNode?
-    private var treasures = [Treasure]()
+    private var treasures: Treasures?
     
     
     let myHookBitMask: UInt32 = 0x0001
@@ -33,6 +36,9 @@ class mineScene: SKScene , SKPhysicsContactDelegate{
     
     
     var coinCount = 0
+    
+    
+    
     
     //MARK: Actions
     override func didMove(to view: SKView) {
@@ -50,21 +56,19 @@ class mineScene: SKScene , SKPhysicsContactDelegate{
     func createSceneContents(){
         // Config
         
-        //self.backgroundColor = SKColor.yellow
-        self.scaleMode = SKSceneScaleMode.fill
         
         
         
         
         //Create background
-        let backgroundImage = SKSpriteNode(imageNamed: "level-background-0", normalMapped: true)
-        backgroundImage.position = CGPoint(x: 0, y: -60)
-        backgroundImage.size = CGSize(width: self.frame.width, height: self.frame.height-120)
+        let backgroundImage = SKSpriteNode(imageNamed: "level-background-0")
+        backgroundImage.position = CGPoint(x: 0, y: -40)
+        backgroundImage.size = CGSize(width: self.frame.width, height: self.frame.height-80)
         self.addChild(backgroundImage)
         
         let backgroundHead = SKSpriteNode(imageNamed: "level-background-header")
-        backgroundHead.position = CGPoint(x:0, y:self.frame.height/2-60)
-        backgroundHead.size = CGSize(width: self.frame.width, height: 120)
+        backgroundHead.position = CGPoint(x:0, y:self.frame.height/2-40)
+        backgroundHead.size = CGSize(width: self.frame.width, height: 80)
         self.addChild(backgroundHead)
         
         
@@ -72,14 +76,14 @@ class mineScene: SKScene , SKPhysicsContactDelegate{
         
         // Miner
         let miner = SKSpriteNode(imageNamed: "workup4")
-        miner.position = CGPoint(x: 0, y: self.frame.height/2-70)
-        miner.size = CGSize(width: 50, height: 80)
+        miner.position = CGPoint(x: 0, y: self.frame.height/2-40)
+        miner.size = CGSize(width: 70, height: 70)
         self.addChild(miner)
         self.miner = miner
         
         
         // Treasures
-        let gold3 = SKSpriteNode(imageNamed: "ObjGlod3_1")
+        /*let gold3 = SKSpriteNode(imageNamed: "ObjGlod3_1")
         gold3.position = CGPoint(x: 0, y: 0)
         gold3.size = CGSize(width: 50, height: 50)
         gold3.anchorPoint = CGPoint(x: 0.5, y: 1)
@@ -88,11 +92,53 @@ class mineScene: SKScene , SKPhysicsContactDelegate{
         gold3.physicsBody?.isDynamic = false
         gold3.physicsBody?.contactTestBitMask = self.myOBJBitMask
         self.addChild(gold3)
-        self.gold3 = gold3
+        self.gold3 = gold3*/
         
-        /*let gold3 = Treasure(imageName: "ObjGlod3_1", x: 0, y: 0, width: 50, height: 50)
-        self.addChild(gold3.getTreasureNode()!)
-        self.treasures.append(gold3)*/
+        treasures = Treasures()
+        
+        
+        // round 1
+        var index = treasures?.addNode(imageName: "ObjStone1", x: 20, y: -70)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold1", x: -50, y: 0)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold3", x: -40, y: -100)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjStone2", x: -70, y: -40)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjStone1", x: -110, y: -85)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjStone2", x: -120, y: 20)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold1", x: -140, y: 45)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold2", x: -200, y: 35)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold3", x: -210, y: -100)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjStone2", x: -260, y: -60)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold1", x: 90, y: 50)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold1", x: 110, y: 20)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjRand", x: 115, y: -85)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjStone2", x: 140, y: -40)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjStone1", x: 150, y: 30)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold1", x: 180, y: 60)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold1", x: 185, y: -77)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold2", x: 200, y: -20)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold1", x: 250, y: 25)
+        self.addChild((treasures?.getNode(by: index!))!)
+        index = treasures?.addNode(imageName: "ObjGold2", x: 260, y: -50)
+        self.addChild((treasures?.getNode(by: index!))!)
+        
         
         
         // Hook line
@@ -111,8 +157,8 @@ class mineScene: SKScene , SKPhysicsContactDelegate{
         // Hook
         let hook1 = SKSpriteNode(imageNamed: "hook1")
         let hook2 = SKSpriteNode(imageNamed: "hook2")
-        hook1.size = CGSize(width: 20, height: 30)
-        hook2.size = CGSize(width: 20, height: 30)
+        hook1.size = CGSize(width: 30, height: 30)
+        hook2.size = CGSize(width: 30, height: 30)
         hook1.position = CGPoint(x: miner.position.x, y: miner.position.y-20)
         hook2.position = CGPoint(x: 0, y: 0)
         //hook1.position = CGPoint(x: 0, y: -30)
@@ -132,24 +178,38 @@ class mineScene: SKScene , SKPhysicsContactDelegate{
         self.sPos = (hook?.position)!
         //self.line = line
         
+        // HookAction
+        hook1.run(shakeAction)
         
         // coin
         let coinIcon = SKSpriteNode(imageNamed: "coin")
-        coinIcon.size = CGSize(width: 50, height: 50)
-        coinIcon.position = CGPoint(x: -self.frame.width/2+25, y: self.frame.height/2-25)
+        coinIcon.size = CGSize(width: 30, height: 30)
+        coinIcon.position = CGPoint(x: -self.frame.width/2+25, y: self.frame.height/2-20)
         self.addChild(coinIcon)
         
         let coinCount = SKLabelNode(text: String(self.coinCount))
+        coinCount.fontName = "Zapfino"
         coinCount.fontColor = UIColor.green
-        coinCount.fontSize = 42
-        coinCount.position = CGPoint(x: -self.frame.width/2+60, y: self.frame.height/2-35)
+        coinCount.fontSize = 17
+        coinCount.position = CGPoint(x: -self.frame.width/2+60, y: self.frame.height/2-32)
         self.coinCountNode = coinCount
         self.addChild(coinCount)
         
+        // goal
+        let goalIcon = SKSpriteNode(imageNamed: "goal")
+        goalIcon.size = CGSize(width: 30, height: 30)
+        goalIcon.position = CGPoint(x: -self.frame.width/2+25, y: self.frame.height/2-55)
+        self.addChild(goalIcon)
         
-        // HookAction
-        //hookAction()
-        hook1.run(shakeAction)
+        let goalCount = SKLabelNode(text: "650")
+        goalCount.fontName = "Zapfino"
+        goalCount.fontColor = UIColor.black
+        goalCount.fontSize = 17
+        goalCount.position = CGPoint(x: -self.frame.width/2+60, y: self.frame.height/2-67)
+        self.addChild(goalCount)
+        
+        
+        // time
         
         
     
@@ -160,48 +220,79 @@ class mineScene: SKScene , SKPhysicsContactDelegate{
     
     
     //MARK: TouchEvent
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //self.line?.run(SKAction.scale(by: 10, duration: 1))
         //suspension = false
         let r = (hook?.zRotation)!
-        let goAction = SKAction.repeatForever(SKAction.move(by: CGVector(dx: 50*sin(r), dy: -50*cos(r)), duration: 0.5))
+        let goAction = SKAction.repeatForever(SKAction.sequence([SKAction.move(by: CGVector(dx: 50*sin(r), dy: -50*cos(r)), duration: 0.5), SKAction.run {
+            if let x = self.hook?.position.x, let y = self.hook?.position.y, let w = self.hook?.size.width, let h = self.hook?.size.height {
+                let bw = self.frame.width
+                let bh = self.frame.height
+                if x < (-bw/2+w) || x > (bw/2-w) || y < (-bh/2+h) {
+                    self.hook?.removeAllActions()
+                    let returnAction = SKAction.move(to: (self.sPos)!, duration: 2)
+                    self.hook?.run(SKAction.sequence([returnAction, self.shakeAction]))
+                    //, SKAction.wait(forDuration: returnAction.duration)
+                }
+            }
+            }]))
         hook?.removeAllActions()
         self.hook?.run(goAction)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let returnAction = SKAction.move(to: (self.sPos)!, duration: 1)
         
-        hook?.removeAllActions()
-        self.hook?.run(returnAction)
-        
-        let addScores = SKAction.run {
-            if self.got {
-                self.gold3?.removeFromParent()
-                self.coinCount += 1
-                self.coinCountNode?.text = String(self.coinCount)
-                print(self.coinCount)
-                self.got = false
-            }
-        }
-        self.hook?.run(SKAction.sequence([SKAction.wait(forDuration: 1), addScores, self.shakeAction]))
     }
 
     
     //MARK: Contact
     
     func didBegin(_ contact: SKPhysicsContact) {
-        print("contactBegin")
-        gold3?.removeFromParent()
-        gold3?.position = CGPoint(x: 0, y: -15)
-        gold3?.physicsBody = nil
-        hook?.addChild(gold3!)
-        gold3?.zPosition = 1
-        got = true
+        //print("contactBegin")
+        
+        hook?.removeAllActions()
+        
+        let obj = contact.bodyA.node as! TreasureNode;
+        obj.removeFromParent()
+        obj.position = CGPoint(x: 0, y: -15)
+        obj.physicsBody = nil
+        hook?.addChild(obj)
+        obj.zPosition = 1
+        
+        let r = (hook?.zRotation)!
+        let goBack = SKAction.move(by: CGVector(dx: -sin(r), dy: cos(r)), duration: 0.01)
+        goBack.speed = CGFloat(1/obj.weight!)
+        let returnAction = SKAction.repeatForever(SKAction.sequence([goBack, SKAction.run {
+            if (self.hook?.position.y)! + cos(r) >= (self.sPos?.y)! {
+                self.hook?.removeAllActions()
+                self.hook?.run(SKAction.move(to: self.sPos!, duration: 0.01))
+            }
+            }]))
+
+        
+        
+        //self.hook?.run(returnAction)
+        
+        let addScores = SKAction.run {
+            obj.removeFromParent()
+            
+            self.coinCount += obj.coin!
+            self.coinCountNode?.text = String(self.coinCount)
+            //print(self.coinCount)
+        }
+        self.hook?.run(returnAction)
+        
+        let quene = DispatchQueue.global()
+        quene.async {
+            while self.hook?.position.x != self.sPos?.x || self.hook?.position.y != self.sPos?.y {}
+            self.hook?.run(SKAction.sequence([addScores, self.shakeAction]))
+        }
+        
     }
     
     func didEnd(_ contact: SKPhysicsContact) {
-        print("contactEnd")
+        //print("contactEnd")
         
     }
 }

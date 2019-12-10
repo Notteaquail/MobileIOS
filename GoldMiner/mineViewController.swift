@@ -11,49 +11,40 @@ import SpriteKit
 
 class mineViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if let skView = self.view as! SKView? {
-            skView.showsDrawCount = true
-            skView.showsFPS = true
-            skView.showsNodeCount = true
-            
-        }
-        
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "level-background-0.jpg")!)
-    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
-        if let scene = SKScene(fileNamed: "mineScene") {
-            scene.size = self.view.bounds.size
-            scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-            if let spritView = self.view as? SKView {
-                spritView.presentScene(scene)
+        super.viewWillAppear(animated)
+        
+        if let skView = self.view as? SKView {
+            if let scene = SKScene(fileNamed: "mineScene") {
+                scene.size = CGSize(width: 320*(skView.bounds.size.width/skView.bounds.size.height), height: 320)
+                //scene.scaleMode = .fill
+                
+                print(scene.size)
+                
+                skView.showsDrawCount = true
+                skView.showsFPS = true
+                skView.showsNodeCount = true
+                
+                skView.presentScene(scene)
             }
         }
     }
 
-    /*override var shouldAutorotate: Bool {
+    override var shouldAutorotate: Bool {
         return true
     }
     
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return [.landscapeRight, .landscapeLeft]
+        return [.landscapeLeft, .landscapeRight]
     }
     
     override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
         return .landscapeRight
-    }*/
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+    
 
 }
