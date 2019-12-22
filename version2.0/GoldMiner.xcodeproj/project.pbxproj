@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1813AD3E239FD2E3002E02EF /* TreasureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813AD3D239FD2E3002E02EF /* TreasureNode.swift */; };
+		18217F9023AB9E6400D6302A /* SceneElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18217F8F23AB9E6400D6302A /* SceneElements.swift */; };
+		18217F9323ABB03600D6302A /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18217F9223ABB03600D6302A /* MusicManager.swift */; };
+		18217F9823ABB08900D6302A /* PreStart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18217F9423ABB08900D6302A /* PreStart.mp3 */; };
+		18217F9923ABB08900D6302A /* LevelPass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18217F9523ABB08900D6302A /* LevelPass.mp3 */; };
+		18217F9A23ABB08900D6302A /* menu-bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18217F9623ABB08900D6302A /* menu-bg.mp3 */; };
+		18217F9B23ABB08900D6302A /* level-bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18217F9723ABB08900D6302A /* level-bg.mp3 */; };
 		1821EDE0238FEC3E00255E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821EDDF238FEC3E00255E3A /* AppDelegate.swift */; };
 		1821EDEB238FEC3E00255E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDE9238FEC3E00255E3A /* Main.storyboard */; };
 		1821EDED238FEC4A00255E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDEC238FEC4A00255E3A /* Assets.xcassets */; };
 		1821EDF0238FEC4A00255E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDEE238FEC4A00255E3A /* LaunchScreen.storyboard */; };
 		1821EDFA23900B8900255E3A /* mineScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1821EDF923900B8900255E3A /* mineScene.sks */; };
+		183026F123AE4FEE00861897 /* BombAnimation.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 183026F023AE4FEE00861897 /* BombAnimation.atlas */; };
 		1845C4FB23923F56000373ED /* mineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845C4FA23923F56000373ED /* mineViewController.swift */; };
 		1845C4FD23924184000373ED /* mineScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845C4FC23924184000373ED /* mineScene.swift */; };
 		1889709323A8DF3C00476E0F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889709223A8DF3C00476E0F /* Store.swift */; };
@@ -24,6 +31,12 @@
 
 /* Begin PBXFileReference section */
 		1813AD3D239FD2E3002E02EF /* TreasureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureNode.swift; sourceTree = "<group>"; };
+		18217F8F23AB9E6400D6302A /* SceneElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneElements.swift; sourceTree = "<group>"; };
+		18217F9223ABB03600D6302A /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		18217F9423ABB08900D6302A /* PreStart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PreStart.mp3; sourceTree = "<group>"; };
+		18217F9523ABB08900D6302A /* LevelPass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LevelPass.mp3; sourceTree = "<group>"; };
+		18217F9623ABB08900D6302A /* menu-bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "menu-bg.mp3"; sourceTree = "<group>"; };
+		18217F9723ABB08900D6302A /* level-bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "level-bg.mp3"; sourceTree = "<group>"; };
 		1821EDDC238FEC3E00255E3A /* GoldMiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldMiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1821EDDF238FEC3E00255E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1821EDEA238FEC3E00255E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,6 +44,7 @@
 		1821EDEF238FEC4A00255E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1821EDF1238FEC4A00255E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1821EDF923900B8900255E3A /* mineScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = mineScene.sks; sourceTree = "<group>"; };
+		183026F023AE4FEE00861897 /* BombAnimation.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BombAnimation.atlas; sourceTree = "<group>"; };
 		1845C4FA23923F56000373ED /* mineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mineViewController.swift; sourceTree = "<group>"; };
 		1845C4FC23924184000373ED /* mineScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mineScene.swift; sourceTree = "<group>"; };
 		1889709223A8DF3C00476E0F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -69,18 +83,21 @@
 			path = Treasures;
 			sourceTree = "<group>";
 		};
-		18217F8823AB7BF000D6302A /* Mine */ = {
+		18217F8823AB7BF000D6302A /* Scene */ = {
 			isa = PBXGroup;
 			children = (
 				1845C4FC23924184000373ED /* mineScene.swift */,
 				1821EDF923900B8900255E3A /* mineScene.sks */,
+				18217F8F23AB9E6400D6302A /* SceneElements.swift */,
 			);
-			path = Mine;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		18217F8C23AB7CCE00D6302A /* Assert */ = {
 			isa = PBXGroup;
 			children = (
+				183026F023AE4FEE00861897 /* BombAnimation.atlas */,
+				183026D223AE42F700861897 /* Music */,
 				1821EDEC238FEC4A00255E3A /* Assets.xcassets */,
 				18D1EF9823A4F854001A6474 /* Textures.atlas */,
 			);
@@ -96,6 +113,14 @@
 				18F1F0192394B6E70074C39F /* Launch_logo.png */,
 			);
 			path = ViewAndController;
+			sourceTree = "<group>";
+		};
+		18217F9123ABAFFD00D6302A /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				18217F9223ABB03600D6302A /* MusicManager.swift */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 		1821EDD3238FEC3D00255E3A = {
@@ -118,14 +143,26 @@
 			isa = PBXGroup;
 			children = (
 				18217F8D23AB7D2400D6302A /* ViewAndController */,
-				18217F8823AB7BF000D6302A /* Mine */,
+				18217F8823AB7BF000D6302A /* Scene */,
 				18217F8723AB7AB000D6302A /* Treasures */,
 				18217F8623AB79C800D6302A /* Store */,
+				18217F9123ABAFFD00D6302A /* Music */,
 				18217F8C23AB7CCE00D6302A /* Assert */,
 				1821EDDF238FEC3E00255E3A /* AppDelegate.swift */,
 				1821EDF1238FEC4A00255E3A /* Info.plist */,
 			);
 			path = GoldMiner;
+			sourceTree = "<group>";
+		};
+		183026D223AE42F700861897 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				18217F9723ABB08900D6302A /* level-bg.mp3 */,
+				18217F9523ABB08900D6302A /* LevelPass.mp3 */,
+				18217F9623ABB08900D6302A /* menu-bg.mp3 */,
+				18217F9423ABB08900D6302A /* PreStart.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,10 +223,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18217F9B23ABB08900D6302A /* level-bg.mp3 in Resources */,
 				1821EDEB238FEC3E00255E3A /* Main.storyboard in Resources */,
 				18D1EF9923A4F854001A6474 /* Textures.atlas in Resources */,
+				183026F123AE4FEE00861897 /* BombAnimation.atlas in Resources */,
+				18217F9A23ABB08900D6302A /* menu-bg.mp3 in Resources */,
+				18217F9923ABB08900D6302A /* LevelPass.mp3 in Resources */,
 				1821EDED238FEC4A00255E3A /* Assets.xcassets in Resources */,
 				18F1F01A2394B6E70074C39F /* Launch_logo.png in Resources */,
+				18217F9823ABB08900D6302A /* PreStart.mp3 in Resources */,
 				1821EDF0238FEC4A00255E3A /* LaunchScreen.storyboard in Resources */,
 				1821EDFA23900B8900255E3A /* mineScene.sks in Resources */,
 			);
@@ -204,7 +246,9 @@
 			files = (
 				1813AD3E239FD2E3002E02EF /* TreasureNode.swift in Sources */,
 				1889709523A8DFAC00476E0F /* StoreProductNode.swift in Sources */,
+				18217F9323ABB03600D6302A /* MusicManager.swift in Sources */,
 				18B659102393F1DB00611595 /* Treasures.swift in Sources */,
+				18217F9023AB9E6400D6302A /* SceneElements.swift in Sources */,
 				1845C4FD23924184000373ED /* mineScene.swift in Sources */,
 				1889709323A8DF3C00476E0F /* Store.swift in Sources */,
 				1821EDE0238FEC3E00255E3A /* AppDelegate.swift in Sources */,
